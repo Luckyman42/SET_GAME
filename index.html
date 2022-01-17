@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DAX8UM-SET-BEADANDO-JS</title>
+    <link rel="stylesheet" href="setStyle.css">
+</head>
+<body>
+    <h1>SET, DAX8UM </h1>
+    <div id="settings">
+        <a href="set_magyar_szabaly.pdf" target="blank">Játék információ</a> <br><br>
+        Játékosok Száma: <input id="numberOfPlayers" type="number" min="1" max="10" value="1"> <br>
+        Játékmód: <br>
+        <input type="radio" id="practice" name="mode" value="practice" checked>
+        <label for="practice">Gyakorló</label><br>
+        <input type="radio" id="race" name="mode" value="race">
+        <label for="race">Verseny</label><br>
+        
+        
+        Játék nehézsége:  <br>
+        <input type="radio" id="normal" name="level" value="normal">
+        <label for="normal">Normal</label><br>
+        <input type="radio" id="hard" name="level" value="hard" checked>
+        <label for="hard">Nehéz</label><br>
+        <!-- Radió gombok -->
+        <!-- egyébb beállítások  -->
+        <div id="extraSettings">
+            <label for="haveSetCheckBox">Legyen olyan gomb ami megmondja van-e SET</label><input type="checkbox" name="haveSet" id="haveSetCheckBox"><br>
+            <label for="showSetCheckBox">Legyen olyan gomb amelyre kattintva a gép mutat egy SET-et</label><input type="checkbox" name="showSet" id="showSetCheckBox"><br>
+            Plusz 3 lapos kiegészítés automatikusan jelenjen meg vagy külön gombra?<br>
+            <input type="radio" id="auto" name="plusCards" value="auto" checked>
+            <label for="auto">Automatikusan</label><br>
+            <input type="radio" id="plusButton" name="plusCards" value="plusButton">
+            <label for="plusButton">Külön gombra</label><br>
+        </div>
+        <div id="playerRenameBlock">
+
+        </div>
+
+        
+        <button id="startBut">START</button>
+        
+    </div>
+
+
+
+
+    <table id="gamePlace" style="display: none;">
+        <tr id="status">
+            <td>
+                <p>Eddig eltelt idő: <span id="elapsedTime">0</span> <br>
+                Hátralévő lapok száma: <span id="numberOfCards"></span></p>
+            </td>
+            <td style="text-align: right;">
+                <p id="timeText" style="display: none;">  Hátralévő másodpercek a kijelölés végéig: <span id="timeScreen">10</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td id="buttonsPlace" colspan="2"></td>
+        </tr>
+        <tr>
+            <td id = "playersPlace"></td>
+            <td id = "tablePlace"></td>
+        </tr>
+        
+    </table>
+
+    <div id="GameOverPlace" style="display: none;"></div>
+    <script src="set.js"></script>
+</body>
+</html>

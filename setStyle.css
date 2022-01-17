@@ -1,0 +1,45 @@
+.focus{
+    opacity: 50%;
+}
+
+.highlight{
+    background-color: green;
+}
+
+#gamePlace table tr td img{
+    
+    max-height: 150px;
+}
+
+#gamePlace table tr td,#gamePlace table tr {
+    min-height:  150px;
+    min-width:  98px;
+}
+
+#playersPlace{
+    vertical-align: top;
+}
+
+html{
+    background-color: lightseagreen;
+    transition: linear 1.5s;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: lightcyan;
+    width:85%;
+    padding:0.1% 2% 2% 2%; 
+    margin:20px auto;
+    border:0px dotted gray;
+    box-shadow:0 0 30px black;	
+    text-align: justify;
+    position: relative;
+}
+a{
+    font-variant: small-caps;
+}
+button{
+    padding: 5px 10px;
+    margin-right: 10px;
+    border-radius: 12px;
+}
